@@ -26,3 +26,7 @@ I do try to avoid using additional package and just use the essential packages t
 ### Back End
 
 I have implemented the backend with **node.js** and **typescript** (ts-node), **graphql-yoga**, **code-gen** ,**mongodb**, **redis**, **tslint** with **prettier**, **husky** and **commitlint**
+
+* **GraphQL-Yogo**: it is amzaing for using graphql in server. I preferred **GraphGL-Yogo** over **Apollo Server** because this project was samll and GraphQL Yoga only has a fraction of the dependencies of Apollo Server, and in general is much smaller. Also GraphQL Yoga's APIs are designed for code-splitting and thus have no side effects, where Apollo server specifies that is has side effects and thus, cannot be code splitted.
+
+* **Code-gen**: It is a great tools for generating types of typescript based on the schema file. As you know the schema file determine the input and types in graphql that is pretty like the types in typescript but it's different! if you want convert the schema types to the typescript types it is cumbersome. Here that Code-gen comes to produce types base on schema file. `codegen.yml` is the confige file.
