@@ -1,5 +1,7 @@
 # Rick & Morty 
 
+![Rick and Morty logo](https://i.ibb.co/6ZYK1ys/logo.jpg)
+
 At the first I want to thank you for designing this smart and beautiful assignment.
 For front of this project I used your template that is react with JavaScript, and because I had seen Typescript in your job post I have implemented the sever with typescript.
 
