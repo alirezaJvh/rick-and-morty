@@ -1,0 +1,3 @@
+[submodule "rick-morty-front"]
+	path = rick-morty-front
+	url = https://github.com/alirezaJvh/rick-morty-front.git
