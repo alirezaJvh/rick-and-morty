@@ -1,8 +1,9 @@
 # Rick & Morty 
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; width: 100%">
 <img src="https://i.ibb.co/6ZYK1ys/logo.jpg" width="200px" height="200px"/>
 </div>
+
 
 
 ## What was in my mind :brain:
@@ -11,22 +12,30 @@ I do try to avoid using additional package and just use the essential packages t
 
 ### Front End
  
-* **React** : the core and framework :sweat_smile:
+* **React** : The core and framework :sweat_smile:
 
 * **Sass**: Using sass makes coding styles more enjoyable with providing the variables and allow to wring function in css. I write some basic class for display, positions , and breakpoints in `src/assets/design` and import it in the `index.jsx` in order to available in the all files (components and pages ).
 
-* **Apollo client** : for request graphQL API.
+* **Apollo client** : For request graphQL API in the front.
 
 * **eslint with prettier** : These tools have been used for keep coding style clean .
 
-* **husky**: this great tool to do pipeline in deve mode before pushing the codes. I config husky with commitlint .
+* **husky**: This great tool to do pipeline in deve mode before pushing the codes. I config husky with commitlint .
 
-* **commitlint** : it is interesting package for checking the commits before push to have goode commit convention.
+* **commitlint** : It is interesting package for checking the commits before push to have goode commit convention.
 
 ### Back End
 
-I have implemented the backend with **node.js** and **typescript** (ts-node), **graphql-yoga**, **code-gen** ,**mongodb**, **redis**, **tslint** with **prettier**, **husky** and **commitlint**
+I have implemented the backend with **node.js** and **typescript** (ts-node), **graphql-yoga**, **code-gen** ,**mongodb**, **redis**, **tslint** with **prettier**, **husky** with **commitlint** and **nodemone**.
 
-* **GraphQL-Yogo**: it is amzaing for using graphql in server. I preferred **GraphGL-Yogo** over **Apollo Server** because this project was samll and GraphQL Yoga only has a fraction of the dependencies of Apollo Server, and in general is much smaller. Also GraphQL Yoga's APIs are designed for code-splitting and thus have no side effects, where Apollo server specifies that is has side effects and thus, cannot be code splitted.
+* **GraphQL-Yogo**: It is amzaing for using graphql in server. I preferred **GraphGL-Yogo** over **Apollo Server** because this project was samll and GraphQL Yoga only has a fraction of the dependencies of Apollo Server, and in general is much smaller. Also GraphQL Yoga's APIs are designed for code-splitting and thus have no side effects, where Apollo server specifies that is has side effects and thus, cannot be code splitted.
 
 * **Code-gen**: It is a great tools for generating types of typescript based on the schema file. As you know the schema file determine the input and types in graphql that is pretty like the types in typescript but it's different! if you want convert the schema types to the typescript types it is cumbersome. Here that Code-gen comes to produce types base on schema file. `codegen.yml` is the confige file.
+
+* **mongodb**: The detabase for saving users.
+
+* **redis**: Favourite cache database for caching characters cards.
+
+* **nodemone**: Using in order to hot reloading.
+
+* **tslint with prettier**: Like eslint with prettier in the front.
