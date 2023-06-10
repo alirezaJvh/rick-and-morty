@@ -1,8 +1,22 @@
 # Rick & Morty 
 
-<div style="display: flex; justify-content: center; width: 100%">
+<div style="display: flex; justify-content: center;">
 <img src="https://i.ibb.co/6ZYK1ys/logo.jpg" width="200px" height="200px"/>
 </div>
+
+
+## How to run
+
+* **Server**
+    1. Go to the Server repo and run `npm install` to install dependencies.
+    3. install redis and run command `redis-server` to have access to redis database.
+    2. run command `npm run start`. open `http://localhost:4000/graphql` to see the GraphQl playground.
+    
+* **App**
+    1. Go to the front repo and run `yarn` to install dependencies.
+    2. run command `yarn start` then open browser and see `http://localhost:3000`.
+
+I also make dockerie th front project. for this purpose i create a `Dockerfile` and `docker-compose.dev.yml` file.
 
 
 
@@ -32,7 +46,7 @@ I have implemented the backend with **node.js** and **typescript** (ts-node), **
 
 * **Code-gen**: It is a great tools for generating types of typescript based on the schema file. As you know the schema file determine the input and types in graphql that is pretty like the types in typescript but it's different! if you want convert the schema types to the typescript types it is cumbersome. Here that Code-gen comes to produce types base on schema file. `codegen.yml` is the confige file.
 
-* **mongodb**: The detabase for saving users.
+* **mongodb**: The detabase for saving users (use cloud mongodb atlas ).
 
 * **redis**: Favourite cache database for caching characters cards.
 
