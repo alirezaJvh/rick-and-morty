@@ -16,7 +16,7 @@
     1. Go to the front repo and run `yarn` to install dependencies.
     2. run command `yarn start` then open browser and see `http://localhost:3000`.
 
-I also make dockerie th front project. for this purpose i create a `Dockerfile` and `docker-compose.dev.yml` file.
+I also make dockerize the front project. for this purpose I have created a `Dockerfile` and `docker-compose.dev.yml` file.
 
 
 
