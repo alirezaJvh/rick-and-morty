@@ -5,7 +5,7 @@
 </div>
 
 
-## How to run
+## How to run :running_man:
 
 * **Server**
     1. Go to the Server repo and run `npm install` to install dependencies.
